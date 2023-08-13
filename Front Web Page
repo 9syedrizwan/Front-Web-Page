@@ -1,0 +1,250 @@
+
+HTML CODE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Page</title>
+    <link rel="stylesheet" href="again.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo">
+            <h1>PraRoz</h1>
+        </div>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICE</li>
+            <li>DESIGN</li>
+            <li>CONTACT</li>
+        </ul>
+        <div class="srch">
+            <input type="text" name="srch" id="srch" placeholder="Type To Search">
+            <button type="submit">Search</button>
+        </div>
+    </nav>
+    <section class="section-1">
+        <h1 class="head">
+            WEB DESIGN & <br><span class="change">DEVELOPMENT</span><br> COURSES
+        </h1>
+        <p class="pp">We our here to provide you all courses from begi<span class="nn">nners level to the professional level,</span><br>html,css,jsall you under one place.So don't wa<span class="nn">ste your time start your</span><br> new journey of learning different skills.</p>
+        <button class="btn" type="submit">Join Us</button>
+    </section>
+    <aside class="build">
+        <form action="">
+            <h2>Login Here</h2>
+            <div class="username">
+                <input type="email" name="username" id="username" placeholder="Enter Email Here" required>
+            </div>
+            <div class="password">
+                <input type="password" name="password" id="password" placeholder="Enter Password Here" required>
+            </div>
+            <button class="tt" type="submit">Login</button>
+            <div class="account">
+                <a href="">Don't have an account?</a>
+            </div>
+            <div class="sign">
+                <a href="">Sign Up</a>
+                <label for="">Here</label>
+            </div>
+            <p class="end">Login With</p>
+            <div class="foot">
+                <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram-alt' ></i>
+            <i class='bx bxl-twitter' ></i>
+            <i class='bx bxl-linkedin-square' ></i>
+            </div>
+        </form>
+    </aside>
+</body>
+</html>
+
+CSS CODE:
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url(image-2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white ;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    padding: 2.5px;
+    float: left;
+}
+.nav-bar .logo{
+    width: fit-content;
+    margin-right: 300px;
+    margin-left: 40px;
+}
+.nav-bar ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar li{
+    margin: 20px;
+}
+.nav-bar li:hover{
+    color: red;
+}
+.srch {
+    display: flex;
+    align-items: center;
+    margin-left: 140px;
+    height: 50px;
+  }
+  
+.nav-bar .srch input{
+    padding: 8px;
+    border: 2px solid pink;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+.section-1{
+    float: left;
+    width: 45%;
+    margin: 90px 50px 60px 60px;
+}
+
+.btn{
+    background-color: lightpink;
+    border-radius: 8px;
+    width: 100px;
+    font-size: 15px;
+    margin-top: 25px;
+}
+.btn:hover{
+    background-color: pink;
+}
+.change{
+    color: pink;
+    font-size: 50px;
+}
+.head{
+    color: aliceblue;
+    font-size: 30px;
+}
+.pp{
+    color: aliceblue;
+    margin-top: 10px;
+}
+.nn{
+    color: black;
+    font-size: 20px;
+}
+
+.build{
+    float: right;
+    width: 400px;
+    margin: 70px;
+    height: auto;
+}
+
+form{
+    height: 330px;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid lightcoral;
+    background: none;
+    outline: transparent;
+    backdrop-filter: blur(20px);
+
+}
+.build h2{
+    border-radius:  10px;
+    color: lightpink;
+    width: 150px;
+    text-align: center;
+    margin-left: 64px ;
+    margin-top: 17px;
+    background-color: none;
+    font-size: 30px;
+}
+.build .username{
+    border-bottom: 2px solid pink;
+    margin: 20px;
+}
+.build .password{
+    border-bottom: 2px solid pink;
+    margin: 20px;
+}
+
+.build input{
+    outline: none;
+    border: none;
+    background: none;
+    padding-bottom: 7px;
+}
+
+.build input::placeholder{
+    color:lightyellow;
+}
+.build .tt{
+    text-align: center;
+    margin-left: 64px ;
+    background-color: pink;
+    border-radius: 10px;
+    width: 150px;
+    background-color: lightcoral;
+}
+.build .account{
+    margin: 10px;
+    text-align: center;
+}
+.build .account a{
+    color: lightyellow;
+    text-decoration: none;
+}
+.build .sign{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+.build .sign a{
+    text-decoration: none;
+    color: blue;
+}
+.build .end{
+    color: lightyellow;
+    text-align: center;
+}
+.build .foot{
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+    display: flex;
+}
+.build .foot i{
+    padding: 10px;
+    font-size: 30px;
+}
